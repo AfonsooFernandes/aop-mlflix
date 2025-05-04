@@ -6,6 +6,8 @@ const movieSchema = new mongoose.Schema({
   fullplot: String,
   year: Number,
   poster: String,
+  genres: [String], 
+  cast: [String]    
 });
 
 module.exports = mongoose.model('Movie', movieSchema, 'movies');
